@@ -55,10 +55,10 @@ time.sleep(4)
 
 try:
     driver.find_element(By.XPATH, "//p[normalize-space()='Your order has been placed successfully.']")
-    print("Login Test Case is Passed")
+    print("Login TestCase is Passed")
     driver.save_screenshot(".\\Screenshots\\OrderPlaced2.png")
 except NoSuchElementException:
-    print("Login Test Case is Failed")
+    print("Login TestCase is Failed")
 
 # driver.close()
 # driver.close() vs driver.quit()

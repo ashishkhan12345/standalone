@@ -6,7 +6,7 @@ from selenium.common import NoSuchElementException
 
 driver = webdriver.Firefox()
 # Open website
-driveHr.get("https://opensource-demo.orangehrmlive.com/")
+driver.get("https://opensource-demo.orangehrmlive.com/")
 driver.implicitly_wait(2)
 # Enter "Admin" into "Username"
 #time.sleep(2)

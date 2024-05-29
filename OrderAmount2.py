@@ -50,7 +50,6 @@ Exp_Tax = round((Exp_SubTotal * 0.13), 2)
 # print(Exp_Tax)
 Exp_Total = Exp_SubTotal + Exp_Tax
 # print(Exp_Total)
-
 Amount_List = []
 for r in range(l - 2, l + 1):
     Var = driver.find_element(By.CSS_SELECTOR, "tbody tr:nth-child(" + str(r) + ") td:nth-child(4)").text
@@ -81,5 +80,7 @@ if Exp_Total == Act_Total:
     print("Total is matched")
 else:
     print("Total is wrong")
+driver.close()
+
 
 # Price_List.append(float(Product_Price))

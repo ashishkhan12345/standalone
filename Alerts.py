@@ -14,11 +14,12 @@ print(driver.find_element(By.XPATH, "//p[@id='result']").text)
 driver.find_element(By.XPATH, "//button[@onclick='jsConfirm()']").click()
 # Alert(driver).dismiss() # this is dismissed the alter at driver
 print(Alert(driver).text)  # this is to print the alter message
-alert = Alert(driver)
-alert.accept()
+Alert(driver).accept()
 print(driver.find_element(By.XPATH, "//p[@id='result']").text)
 # Alert Prompt
 driver.find_element(By.XPATH, "//button[@onclick='jsPrompt()']").click()
+alert = Alert(driver)
+
 alert.send_keys("Hi, I am Credence.")
-alert.accept()
+Alert(driver).accept()
 print(driver.find_element(By.XPATH, "//p[@id='result']").text)

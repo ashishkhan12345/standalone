@@ -32,7 +32,7 @@ driver.find_element(By.ID, "password-confirm").send_keys("test@123")
 driver.find_element(By.CLASS_NAME, "btn").click()
 try:
     driver.find_element(By.XPATH, "//h2[normalize-space()='CredKart']")
-    print("Login Test Case is Passed")
+    print("Login TestCase is Passed")
 except NoSuchElementException:
-    print("Login Test Case is Failed")
+    print("Login TestCase is Failed")
     webdriver.closed()

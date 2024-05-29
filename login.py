@@ -46,6 +46,6 @@ driver.find_element(By.XPATH, "//button[@class='btn btn-primary']").click()
 
 try:
     driver.find_element(By.XPATH, "//strong[normalize-space()='These credentials do not match our records.']")
-    print("Login Test Case is Failed")
+    print("Login TestCase is Failed")
 except NoSuchElementException:
-    print("Login Test Case is Passed")
+    print("Login TestCase is Passed")
